@@ -2,6 +2,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 // endbower
 @import "home";
+@import "search";
+@import "../../bower_components/animate.css/animate.css";
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -16,7 +19,37 @@ nav{
   background-color: black;
 }
 footer.page-footer{
-  background-color: black;
+  background-color: #494949;
+}
+
+.card-home {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  opacity: 0.9;
+
+}
+
+.float-right{
+  float: right;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.home-form{
+  border-radius:5px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #494949;
+  color: #fff;
+
+  label {
+    color: #fff;
+  }
+  .select-wrapper span.caret{
+    color: #fff;
+  }
+
 }
 .brand-logo{
   margin-left: 20px;

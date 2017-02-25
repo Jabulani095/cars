@@ -25,5 +25,20 @@ angular.module('anglar2App')
     $scope.OpenAbout = function () {
       $location.path('/about');
     }
+
+    function addForma () {
+       var contentEnter = 'animated slideInLeft';
+       var eventsHandling = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+       var searchAnim = 'animated shake';
+      $('.card-home').addClass(contentEnter).one(eventsHandling,function () {
+        $('.card-home').removeClass(contentEnter);
+
+        $('.home-form').addClass(searchAnim).one(eventsHandling,function () {
+          $('.home-form').removeClass(searchAnim);
+        })
+      })
+    }
+
+    addForma();
   });
 

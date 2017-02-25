@@ -29,6 +29,7 @@ angular.module('anglar2App')
 
 
        scope.getCar = function () {
+
          carService.getCar(scope.searchData)
            .then(function (res) {
 

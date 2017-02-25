@@ -15,11 +15,16 @@ angular.module('anglar2App')
       link: function postLink(scope, element, attrs) {
          scope.aboutpage = function () {
            $location.path('/about');
-         }
+         };
 
          scope.applypage = function () {
+           $location.path('/apply');
 
-         }
+         };
+        scope.vichle = function () {
+          $location.path('/search');
+
+        };
       }
     };
   });
