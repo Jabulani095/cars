@@ -1,0 +1,46 @@
+<form class="home-form card">
+  <div class="row">
+    <div class="col m3 s12">
+      <label>Make</label>
+      <select ng-model="buildSearch.make">
+        <option value="" disabled selected>Choose your make</option>
+        <option value="toyota">Toyota</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="col m3 s12">
+      <label>Model</label>
+      <select ng-model="buildSearch.model">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="col m3 s12">
+      <label>Transmission</label>
+      <select ng-model="buildSearch.transmission">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+    <div class="col m3 s12">
+      <label>Year</label>
+      <select ng-model="buildSearch.year">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <button class="waves-effect waves-light btn-large black float-right" ng-click="getCar()"> Search</button>
+    </div>
+  </div>
+
+</form>
